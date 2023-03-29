@@ -1,0 +1,527 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* width: 100vw; */
+    box-shadow: 0px 0px 2px gray;
+    height: 65px;
+}
+
+.logo {
+    margin-left: 25px;
+    width: 210px;
+    height: 62px;
+}
+
+.searchbar {
+    margin-left: 15%;
+    border: 1px solid rgb(236, 235, 235);
+    border-radius: 50px;
+    width: 320px;
+    height: 40px;
+    box-shadow: 1px 1px 8px rgb(224, 222, 222);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+#search {
+    border: none;
+    width: 80%;
+    padding: 5px;
+    outline: none;
+}
+
+#search::placeholder {
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#searchbaricon {
+    margin-left: -10px;
+}
+
+.cart {
+    margin-left: auto;
+    margin-right: 25px;
+
+}
+
+.cart i {
+    padding: 0px 15px;
+}
+
+.navbar ul {
+    display: flex;
+    padding: 5px 20px;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: flex;
+    padding: 15px 25px;
+    list-style: none;
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+/* Slider  */
+
+.container {
+    margin-top: 25px;
+    margin-left: 70px;
+    width: 50%;
+
+}
+
+ul.thumb {
+    margin: 0 auto;
+    padding: 0px;
+    float: left;
+}
+
+ul.thumb li {
+    list-style: none;
+    margin: 0px 15px 15px 0px;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid rgba(0,0,0,0.2); */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+ul.thumb li img {
+    width: 100%;
+}
+
+.imgBox {
+    float: left;
+    height: 330px;
+    width: 350px;
+    /* border: 1px solid rgba(0,0,0,0.2); */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
+
+/* side details */
+
+
+.details {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.rating,
+.price,
+.price2,
+.radio,
+.location,
+.caketype,
+.delivery,
+.submit {
+    display: flex;
+}
+
+.details h1 {
+    margin: 5px 0px;
+    letter-spacing: 1px;
+}
+
+.rating {
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.ratingtop {
+    padding: 7px 12px;
+    background-color: green;
+    border-radius: 8px;
+    color: white;
+    margin-right: 20px;
+}
+
+.rating:nth-child(2) {
+    color: gray;
+
+}
+
+.price {
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.price p:nth-child(1) {
+    font-size: 25px;
+    font-weight: 800;
+    margin-right: 15px;
+
+}
+
+.price p:nth-child(2) {
+    font-size: 22px;
+    margin-right: 15px;
+    text-decoration: line-through;
+    color: gray;
+    font-weight: lighter;
+}
+
+.price p:nth-child(3) {
+    color: rgb(27, 207, 27);
+    font-weight: 500;
+    font-size: 17px;
+
+}
+
+.sweight {
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.radio input {
+    margin-right: 8px;
+    color: gray;
+    cursor: pointer;
+
+
+}
+
+.price2 p {
+    margin: 10px 30px 10px 20px;
+}
+
+.location {
+    align-items: center;
+    display: flex;
+    margin: 20px 0px;
+
+}
+
+.enterlocation {
+    width: 150px;
+    border: 1px solid rgb(209, 206, 206);
+    height: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 40px;
+}
+
+.enterlocation input {
+    outline: none;
+    border: none;
+    width: 125px;
+    padding-left: 10px;
+}
+
+.date {
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid rgb(209, 206, 206);
+    /* opacity: 0.5; */
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+
+.caketype {
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.caketype input {
+    margin-right: 5px;
+}
+
+.caketype input:nth-child(3) {
+    width: 150px;
+    border: 1px solid rgb(209, 206, 206);
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-right: 40px;
+    outline: none;
+}
+
+h3 {
+    margin: 15px 0px;
+}
+
+.delivery {
+    border: 1px solid rgb(212, 211, 211);
+    border-radius: 20px;
+    justify-content: space-around;
+    width: 425px;
+    margin: 15px 0px;
+    padding: 7px 10px;
+}
+
+.standard,
+.Fixedtime,
+.Midnight {
+    border: 1px solid rgb(212, 211, 211);
+    padding: 5px 35px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 14px;
+    color: gray;
+    /* margin-right: 20px; */
+}
+
+.standard p:nth-child(2),
+.Fixedtime p:nth-child(2),
+.Midnight p:nth-child(2) {
+    color: rgb(53, 180, 53);
+
+}
+
+.standard:hover,
+.Fixedtime:hover,
+.Midnight:hover {
+    background-color: rgb(207, 203, 203);
+    color: black;
+    cursor: pointer;
+
+}
+
+.selecttime {
+    width: 150px;
+    border: 1px solid rgb(209, 206, 206);
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 15px;
+    margin-right: 40px;
+    outline: none;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.submit button {
+    width: 150px;
+    border: 1px solid rgb(209, 206, 206);
+    height: 40px;
+    border-radius: 7px;
+    margin-right: 25px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.submit button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(163, 22, 22);
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.decription {
+    width: 90%;
+}
+
+.detailscake {
+    display: flex;
+}
+
+.decription p {
+    color: gray;
+    font-size: 15px;
+}
+
+.decription ul li {
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+.disclaimer ul li {
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+
+.review h3 {
+    margin: 15px 0px;
+}
+
+
+.reviewslider {
+    display: flex;
+}
+
+.reviewcard {
+    margin: 5px 15px;
+    height: 100%;
+    width: auto;
+    /* border: 1px solid rgb(230, 227, 227); */
+}
+
+.reviewperson {
+    display: flex;
+    align-items: center;
+}
+
+.reviewperson img {
+    width: 45px;
+    height: 45px;
+    border-radius: 35px;
+}
+
+.reviewtxt p {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.reviewtxt p:nth-child(2) {
+    color: gray;
+}
+
+.experience {
+    padding: 12px 10px;
+    border-radius: 24px;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px gray;
+    width: auto;
+    font-size: 13px;
+    text-align: center;
+}
+
+.reviewcard p:nth-child(3) {
+    padding: 5px 10px;
+    background-color: green;
+    border-radius: 8px;
+    color: white;
+    float: right;
+    width: 40px;
+    height: auto;
+    font-size: 12px;
+}
+
+/* side detail end */
+
+/* footer slider  */
+.footer {
+    text-align: center;
+    margin: 40px;
+}
+
+.footercard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.footerslider {
+    width: 220px;
+    height: 300px;
+    border: 1px solid rgb(218, 214, 214);
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.footerslider img {
+    width: 220px;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.ratingbottem {
+    padding: 5px 5px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    width: 40px;
+    font-size: 11px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -195px;
+    margin-left: 160px;
+}
+
+.footetheading {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+}
+
+.price3 {
+    display: flex;
+    margin: 10px;
+}
+
+.price3 p:nth-child(2) {
+    font-size: 14px;
+    font-weight: 800;
+    margin-right: 15px;
+
+}
+
+.price3 p:nth-child(1) {
+    font-size: 14px;
+    margin-right: 15px;
+    text-decoration: line-through;
+    color: gray;
+    font-weight: lighter;
+}
+
+.Deliveryreview {
+    display: flex;
+    margin: 10px;
+    font-size: 13px;
+
+
+}
+
+.Deliveryreview p:nth-child(2) {
+    color: green;
+    margin-left: 25px;
+
+}
+
+.sliderarrow i {
+    cursor: pointer;
+    font-size: 25px;
+    box-shadow: 1px 1px 4px rgb(216, 214, 214);
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
